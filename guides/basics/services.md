@@ -1,6 +1,12 @@
 # Services
 
-Services are the heart of every Feathers application and are JavaScript objects or instances of [a class](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes) that implement certain methods. Services provide a uniform, protocol independent interface for how to interact with any kind of data like:
+Services are the heart of every Feathers application and are JavaScript objects or instances of [a class](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes) that implement certain methods. 
+
+A Feathers service (described here) encapsulates the "business" logic of your application - the things your application does for the people who use it.  
+
+Note: Feathers middleware (in the `/src/middleware` directory) modifies how your application responds to HTTP requests ([Feathers example](https://docs.feathersjs.com/guides/advanced/file-uploading.html)), using [Express middleware](http://expressjs.com/en/guide/writing-middleware.html).  Middleware encapsulates technical HTTP protocol details.
+
+Services provide a uniform, protocol independent interface for how to interact with any kind of data like:
 
 - Reading and/or writing from a database
 - Interacting with the file system
